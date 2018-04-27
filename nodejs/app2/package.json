@@ -1,0 +1,14 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "shopping list fullarray in desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "fullarray",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.8.6"
+  }
+}
