@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thought Sharing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+  <!-- Page Content goes here -->
+  
+  <div class="row">
+   <div class="col s6 offset-s3 ">
+   <div class="section"> 
+	<h5>Share</h5>
+    <form action="/quotes" method="POST">
+	  <div class="row">
+		<div class="input-field col s6">
+		  <input type="text" class="validate" name="name" autocomplete="off">
+		  <label class="active">Name:</label>
+		</div>
+		<div class="input-field col s6">
+		  <input type="text" class="validate" name="quote" autocomplete="off">
+		  <label class="active">Quote:</label>
+		</div>
+	  </div>
+	   <button class="btn" type="submit">Share</button>
+    </form>
+	</div>
+	</div>
+   <div class="divider"></div>
+   
+   <div class="col s6 offset-s3">
+  <div class="section">
+    <h5>Wall</h5>
+		<table>
+			<thead>
+			  <tr>
+				  <th>Name</th>
+				  <th>Quote</th>
+			  </tr>
+			</thead>
+
+			<tbody class="quotes">
+			<% for(var i=0; i<quotes2.length; i++) {%>
+			  <tr>
+				<td><%= quotes2[i].name %></td>
+				<td><span><%= quotes2[i].quote %></td>
+			  </tr>
+			  <% } %>
+			</tbody>
+		  </table>
+  </div>
+</div> 
+</div> 
+   <p class="center"><b>fullarray 2018</b></p>
+  </div>
+</body>
+</html>
