@@ -1,0 +1,22 @@
+{
+  "name": "app4",
+  "version": "1.0.0",
+  "description": "fullarray crud",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+	"test": "nodemon server.js"
+  },
+  "author": "fullarray",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "ws": "3.3.2"
+  }
+}
