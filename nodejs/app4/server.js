@@ -43,6 +43,8 @@ app.get('/', (req, res) => {
 	
 })
 
+//Use the above to list all records. 
+
 app.get('/otherinformation', (req, res) => {
   db.collection('otherstudentinformation').find().toArray(function(err, result) {
 		//console.log(result)
