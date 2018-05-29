@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+	<!-- Page Content goes here -->
+    <form action="/quotes" method="POST">
+	  
+	  <div class="row">
+		<div class="input-field col s6">
+		  <input id="name" type="text" class="validate" autocomplete="off">
+		  <label class="active" for="name">Name:</label>
+		</div>
+		<div class="input-field col s6">
+		  <input id="name" type="text" class="validate" autocomplete="off">
+		  <label class="active" for="quote">Quote:</label>
+		</div>
+	  </div>
+	   <button class="btn" type="submit">Share</button>
+    </form>
+  </div>
+</body>
+</html>
