@@ -1,1 +1,3 @@
 electronjs
+
+This is a desktop js application.
