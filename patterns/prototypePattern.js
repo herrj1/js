@@ -1,6 +1,6 @@
 var MazdaModels = function(){
 	this.numWheels = 4;
-	this.manufacturer = 'Mazda';
+	this.manufacturer = 'Toyota';
 	this.make = 'Coupe';
 }
 
