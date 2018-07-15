@@ -1,5 +1,5 @@
 var HTMLChanger = (function(){
-	var contents = 'contents';
+	var contents = 'content';
 	
 	var changeHTML = function(){
 		var element = document.getElementById('attribute-to-change');
