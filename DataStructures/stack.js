@@ -22,7 +22,7 @@ Stack.prototype.print = function(){
 	console.log(this.stack.join(' '));
 }
 
-//sample run
+//sample run of this program
 
 var stack = new Stack();
 
