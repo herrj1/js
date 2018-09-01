@@ -39,11 +39,9 @@
     d3.select(selector).selectAll("div.cell")
 	 .data(data)
 	 .enter().append("div").classed("cell", true);
-
     d3.select(selector).selectAll("div.cell")
 	 .data(data)
 	 .exit().remove();
-
     d3.select(selector).selectAll("div.cell")
 	 .data(data)
 	 .style("display", "inline-block")
