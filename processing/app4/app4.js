@@ -32,7 +32,7 @@ function snowflake() {
   this.initialangle = random(0, 2 * PI);
   this.size = random(2, 5);
 
-  // radius of snowflake spiral
+  // radius of snowflakew spiral
   // chosen so the snowflakes are uniformly spread out in area
   this.radius = sqrt(random(pow(width / 2, 2)));
 
