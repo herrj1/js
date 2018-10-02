@@ -34,6 +34,7 @@ Check now</button>
 </section>
 <script>
 function cookiesCheck(){
+	//get browser client and check using built-in function if cookies are enabled
 	if(navigator.cookieEnabled){
 		document.getElementById("demo").innerHTML = "Cookies are enabled";
 	}else{
