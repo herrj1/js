@@ -1,5 +1,4 @@
 //js Arrays
-
 function MyArray(){
   this.array = [];
 }
