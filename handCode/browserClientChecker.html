@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BrowserApp Checker tool</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<style>
+   .app{
+	  width: 100%;
+	  margin: 0 auto;
+	  height: 100%;
+      font-family: 'Lato', sans-serif;
+	  font-weight: 400;
+	  text-align:center;
+   }
+   
+   h1 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	#demo{
+		color:green;
+	}
+   
+</style>
+
+</head>
+<body class="app">
+<section>
+<h1>Web BrowserApp Checker</h1>
+<button type="button"
+onclick="browserCheck()">
+Check now</button>
+<p>Your browser is <i id="demo">[-------]</i></p>
+</section>
+
+<script>
+function browserCheck(){
+    var browser = window.navigator.appName;
+	var codeName = window.navigator.userAgent;
+	var firefox = codeName.match(/Mozilla/g);
+	var chrome = codeName.match(/Chrome/g);
+	
+	if(firefox == 'Mozill'){
+	   document.getElementById("demo").innerHTML = firefox;
+	}else if(chrome == 'Chrom'){
+	  document.getElementById("demo").innerHTML = chrome;
+	}else{
+	   document.getElementById("demo").innerHTML = codeName;
+	}
+	
+}
+</script> 
+</body>
+</html> 

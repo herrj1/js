@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="myform">
+		<!-- First question -->
+		<label>What is the capital of the United States?</label>
+		<input type="radio" name="q1" value="a" />San Francisco<br>
+		<input type="radio" name="q2" value="b" />California<br>
+		<input type="radio" name="q3" value="c" />Washington D.C.<br>
+		<input type="radio" name="q4" value="d" />Miami<br>
+		
+		<!-- Second question -->
+		<label>What is the single most important theorem of calculus?</label>
+		<input type="radio" name="q1" value="a" />Rolles Theorem<br>
+		<input type="radio" name="q2" value="b" />The Fundamental Theorem of Calculus<br>
+		<input type="radio" name="q3" value="c" />The Chain Rule<br>
+		<input type="radio" name="q4" value="d" />The Anti-derivative<br>
+		
+		<!-- Third question -->
+		<label>What is not an object-oriented programming language ?</label>
+		<input type="radio" name="q1" value="a" />Python<br>
+		<input type="radio" name="q2" value="b" />C#<br>
+		<input type="radio" name="q3" value="c" />Java<br>
+		<input type="radio" name="q4" value="d" />C<br>
+		
+		<!-- Evaluate answers -->
+		<input type="submit" value="Evaluate" onclick="evaluate()"/>
+	</form>
+	<p>Score: <span id="score">0</span></p>
+	
+	<script>
+		function evaluate(){
+			var q1 = document.myform.q1.value;
+			var q2 = document.myform.q1.value;
+			var q3 = document.myform.q1.value;
+			var q4 = document.myform.q1.value;
+			var score = document.getElementById("score").value;
+			var count=0;
+			
+			if(q3 == "c"){
+				count++;
+			}else if(q2 == "b"){
+				count++;
+			}else if(q4 == "d"){
+				count++;
+			}
+			score.testContent =  count ;
+			//alert("You answered "+ count + " questions correctly.");
+		}
+	</script>
+</body>
+</html>

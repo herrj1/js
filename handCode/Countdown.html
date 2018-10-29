@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>July 4th Countdown</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <style>
+	body{
+		background: #f6f6f6;
+	}
+	
+	.Countdown{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		background: #ddd;
+		border: 1% solid #999;
+		padding: 10px;
+		box-shadow: 0 0 5px 3px #ccc;
+		
+	}
+	
+	.info{
+		font-size: 80px;
+	}
+  </style>
+  </head>
+  <body>
+	<table class="Countdown">
+		<tr class="info">
+			<td colspan="4">Independence Day Countdown</td>
+		</tr>
+		<tr>
+			<td id="days">120</td>
+			<td id="hours">4</td>
+			<td id="minutes">12</td>
+			<td id="seconds">22</td>
+		</tr>
+		<tr>
+			<td>Days</td>
+			<td>Hours</td>
+			<td>Minutes</td>
+			<td>Seconds</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function countdown(){
+			var now = new Date();
+			var eventDate = new Date(2018, 7, 4);
+			
+			var currentTime = now.getTime();
+			var eventTime = eventDate.getTime();
+			
+			var remTime = eventTime - currentTime;
+			
+			var s = Math.floor(remTime / 1000);
+			var m = Math.floor(s / 60);
+			var h = Math.floor(m / 60);
+			var d = Math.floor(h / 24);
+			
+			h %= 24;
+			m %= 60;
+			s %= 60;
+			
+			h = (h < 10) ? "0" + h : h;
+			m = (m < 10) ? "0" + m : m;
+			s = (s < 10) ? "0" + s : s;
+			
+			document.getElementById("days").textContent = d;
+			document.getElementById("days").innerText = d;
+			
+			document.getElementById("hours").textContent = h;
+			document.getElementById("minutes").textContent = m;
+			document.getElementById("seconds").textContent = s;
+			
+			setTimeout(countdown, 1000);
+		}
+		
+		countdown();
+	</script>
+  </body>
+</html>
