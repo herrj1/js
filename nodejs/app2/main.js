@@ -24,7 +24,6 @@ app.on('ready', function(){
 	});
 	
 	const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
-	
 	Menu.setApplicationMenu(mainMenu);
 });
 
