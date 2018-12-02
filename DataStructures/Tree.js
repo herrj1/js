@@ -6,7 +6,6 @@ function Node(data){
 function Tree(){
 	this.root = null;
 }
-
 Tree.prototype.add = function () {
 	var node = new Node(data);
 	var parent = toNodeData ? this.findBFS(toNodeData): null;
