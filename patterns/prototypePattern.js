@@ -3,7 +3,6 @@ var MazdaModels = function(){
 	this.manufacturer = 'Mazda';
 	this.make = 'Coupe';
 }
-
 MazdaModels.prototype.go = function(){
 	console.log("Car is moving forward.");
 }
