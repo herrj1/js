@@ -27,7 +27,7 @@ app.on('ready', function(){
 	Menu.setApplicationMenu(mainMenu);
 });
 
-//handles create window
+//handles create windows
 function createAddWindow(){
 	addWindow = new BrowserWindow({
 		width: 300,
