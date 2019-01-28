@@ -12,7 +12,7 @@ function draw() {
   background('black');
   let t = frameCount / 60; // update time
 
-  // create a random number of snowflakes each frame
+  // create a random number of snowflakes each frames
   for (var i = 0; i < random(5); i++) {
     snowflakes.push(new snowflake()); // append snowflake object
   }
