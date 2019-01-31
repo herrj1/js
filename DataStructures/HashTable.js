@@ -13,7 +13,6 @@ HashTable.prototype.add = function(key, value){
   if(!this.values[hash].hasOwnProperty(key)){
     this.numberOfValues++;
   }
-
   this.values[hash][key] = value;
 };
 
