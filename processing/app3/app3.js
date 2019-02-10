@@ -20,6 +20,8 @@ function mousePressed(){
     }
     tree[i].finished = true;
   }
+  
+  
   count++;
   
   if(count === 6){
