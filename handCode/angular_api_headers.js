@@ -9,7 +9,6 @@ import { Headers } from '@angular/http';
   styleUrls: ['./authentication.component.css']
 })
 export class AuthenticationComponent implements OnInit {
-    
   user = {
     username: '',
     password: ''
