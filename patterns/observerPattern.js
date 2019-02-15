@@ -30,7 +30,6 @@ var Subject = function(){
 		}
 	};
 };
-
 var Observer = function(){
 	return{
 		notify: function(index){
