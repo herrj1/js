@@ -1,4 +1,4 @@
-//js Arrays
+//js Arrays implementation
 function MyArray(){
   this.array = [];
 }
