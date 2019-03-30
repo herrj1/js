@@ -1,6 +1,5 @@
 
-/**
-<!-- file is partially commented on purpose-->
+/**<!--file is partially commented on purpose-->
 <!DOCTYPE html>
 <head>
 	<title>App1 Herrj</title>
