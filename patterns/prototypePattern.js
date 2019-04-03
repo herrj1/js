@@ -4,7 +4,7 @@ var MazdaModels = function(){
 	this.make = 'Coupe';
 }
 MazdaModels.prototype.go = function(){
-	console.log("Car is moving forward.");
+	console.log("Car is moving forwards.");
 }
 
 MazdaModels.prototype.stop = function(){
