@@ -5,11 +5,9 @@ function Stack(){
 Stack.prototype.pop = function(){
 	this.stack.pop();
 }
-
 Stack.prototype.push = function(value){
 	return this.stack.push(value);
 }
-
 Stack.prototype.peek = function(){
 	return this.stack[this.stack.length - 1];
 }
