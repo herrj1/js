@@ -6,7 +6,6 @@
 <div id="pow-capped" class="clear">
   <span>1 &lt;= a*n^2 + b &lt;= 10</span>
 </div>
-
 <div id="log" class="clear"><span>log(n)</span></div>
 <div id="log-capped" class="clear">
    <span>1 &lt;= a*log(n) + b &lt;= 10</span>
@@ -26,7 +25,6 @@
 	.exponent(2)
 	.domain([1,10])
 	.rangeRound([1,10]);
-
   var log = d3.scale.log();
   var logCapped = d3.scale.log()
 	.domain([1,10])
