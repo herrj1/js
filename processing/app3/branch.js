@@ -18,8 +18,8 @@ function Branch(begin, end){
     dir.rotate(PI / 6);
     dir.mult(0.57);
     var newEnd = p5.Vector.add(this.end, dir);
-    var b = new Branch(this.end, newEnd);
-    return b;
+    var a = new Branch(this.end, newEnd);
+    return a;
   }
   
   this.branchB = function(){
@@ -29,6 +29,15 @@ function Branch(begin, end){
     var newEnd = p5.Vector.add(this.end, dir);
     var b = new Branch(this.end, newEnd);
     return b;
+  }
+  
+    this.branchC = function(){
+    var dir = p5.Vector.sub(this.end, this.begin);
+    dir.rotate(-PI / 4);
+    dir.mult(0.67);
+    var newEnd = p5.Vector.add(this.end, dir);
+    var c = new Branch(this.end, newEnd);
+    return c;
   }
   
 }
