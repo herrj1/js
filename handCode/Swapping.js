@@ -1,4 +1,4 @@
-//swapping
+//swappings
 function Swapping(){
 	this.stack = [];
 }
