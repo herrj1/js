@@ -21,9 +21,7 @@ function mousePressed(){
     tree[i].finished = true;
   }
   
-  
   count++;
-  
   if(count === 6){
     for(var i = 0; i< tree.length; i++){
       if(!tree[i].finished){
@@ -36,7 +34,6 @@ function mousePressed(){
 
 function draw() {
   background(51, 0, 0);
-  
   for(var i = 0; i < tree.length; i++){
     tree[i].show();
   }
