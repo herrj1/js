@@ -6,9 +6,8 @@ $scope.userNameChanged = function(name){
 };
 var Subject = function(){
 	this.observers = [];
-	return{
-		subscribeObserver: function(observer){
-			this.observers.push(observer);
+	return{	subscribeObserver: function(observer){
+		this.observers.push(observer);
 		},
 		unsubscribeObserver: function(observer){
 			var index = this.observers.indexOf(observer);
