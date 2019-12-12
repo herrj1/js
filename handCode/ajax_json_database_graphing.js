@@ -7,7 +7,7 @@
           var chartProperties = {
             "caption": "Top 10 best football players in2015",
             "xAxisName": "Player",
-            "yAxisName": "Wickets Taken",
+            "yAxisName": "Wicket Taken",
             "rotatevalues": "1",
             "theme": "zune"
           };
