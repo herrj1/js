@@ -3,8 +3,7 @@ var HTMLChanger = (function(){
 	var changeHTML = function(){
 		var element = document.getElementById('attribute-to-change');
 		element.innerHTML = contents;
-	}
-	return{
+	}return{
 		callChangeHTML: function(){
 		   changeHTML();
 		   console.log(contents);
