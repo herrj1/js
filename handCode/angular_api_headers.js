@@ -8,6 +8,8 @@ import { Headers } from '@angular/http';
   templateUrl: './authentication.component.html',
   styleUrls: ['./authentication.component.css']
 })
+
+
 export class AuthenticationComponent implements OnInit {
   user = {
     username: '',
