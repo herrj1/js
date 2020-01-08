@@ -1,7 +1,6 @@
 
 //fullarray
-let snowflakes = []; // array to hold snowflake objects
-
+let snowflakes = []; // array to hold snowflake object
 function setup() {
   createCanvas(windowWidth,windowHeight);
   fill(240);
