@@ -9,7 +9,6 @@ function findEmails(){
 			deleteEmails(emails, emailSubject(paragraph), extractDate(paragraph))
 		}
 	}
-	
 	for(var mail = 0; mail < mailArchieve.length; mail++){
 		var paragraphs = mailArchieve[mail].split("\n");
 		for(var i = 0; i < paragraphs.length; i++){
