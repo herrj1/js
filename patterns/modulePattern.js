@@ -1,5 +1,5 @@
 var HTMLChanger = (function(){
-	var contents = 'content';
+	var contents = 'contents';
 	var changeHTML = function(){
 		var element = document.getElementById('attribute-to-change');
 		element.innerHTML = contents;
@@ -10,5 +10,6 @@ var HTMLChanger = (function(){
 		}
 	};
 })();
+
 HTMLChanger.callChangeHTML();
 console.log(HTMLChanger.contents);
