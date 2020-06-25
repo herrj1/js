@@ -6,7 +6,6 @@ var MazdaModels = function(){
 MazdaModels.prototype.go = function(){
 	console.log("Car is moving forward.");
 }
-
 MazdaModels.prototype.stop = function(){
-	console.log("Car is stopped.");
+	console.log("Car stop.");
 }
