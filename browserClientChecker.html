@@ -12,7 +12,8 @@
   h1 {	text-align: center;
 	text-transform: uppercase;}
 </style>
-</head><body class="app">
+</head>
+	<body class="app">
 <section>
 <h1>Web BrowserApp Checker</h1>
 <button type="button"
@@ -20,7 +21,6 @@ onclick="browserCheck()">
 Check now</button>
 <p id="demo"></p>
 </section>
-
 <script>
 function browserCheck(){
 	document.getElementById("demo").innerHTML = "Your currents browser is: " + window.navigator.appName;
