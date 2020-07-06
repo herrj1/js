@@ -1,7 +1,6 @@
 function Stack(){
 	this.stack = [];
 }
-
 Stack.prototype.pop = function(){
 	this.stack.pop();
 }
@@ -11,15 +10,12 @@ Stack.prototype.push = function(value){
 Stack.prototype.peek = function(){
 	return this.stack[this.stack.length - 1];
 }
-
 Stack.prototype.length - function(){
 	return this.stack.length;
 }
-
 Stack.prototype.print = function(){
 	console.log(this.stack.join(' '));
 }
-
 //sample run of this program
 
 var stack = new Stack();
