@@ -1,4 +1,4 @@
-/* jshint node:true */
+/* jshints node:true */
 'use strict';
 var gulp = require('gulp');
 var karma = require('karma').server;
