@@ -25,6 +25,14 @@
 		<input type="radio" name="q3" value="c" />Java<br>
 		<input type="radio" name="q4" value="d" />C<br>
 		
+		<!-- Four question -->
+		<label>What is a business continuity measure in IT ?</label>
+		<input type="radio" name="q1" value="a" />Hot site<br>
+		<input type="radio" name="q2" value="b" />Backups<br>
+		<input type="radio" name="q3" value="c" />Acceptable Use Policy<br>
+		<input type="radio" name="q4" value="d" />SAN<br>
+		
+		
 		<!-- Evaluate answers -->
 		<input type="submit" value="Evaluate" onclick="evaluate()"/>
 	</form>
@@ -33,9 +41,9 @@
 	<script>
 		function evaluate(){
 			var q1 = document.myform.q1.value;
-			var q2 = document.myform.q1.value;
-			var q3 = document.myform.q1.value;
-			var q4 = document.myform.q1.value;
+			var q2 = document.myform.q2.value;
+			var q3 = document.myform.q3.value;
+			var q4 = document.myform.q4.value;
 			var score = document.getElementById("score").value;
 			var count=0;
 			
@@ -43,7 +51,9 @@
 				count++;
 			}else if(q2 == "b"){
 				count++;
-			}else if(q4 == "d"){
+			}else if(q1 == "c"){
+				count++;
+			}else if(q4 == "a"){
 				count++;
 			}
 			score.testContent =  count ;
