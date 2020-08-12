@@ -45,12 +45,14 @@ var observer2 = new Observer();
 var observer3 = new Observer();
 var observer4 = new Observer();
 var observer5 = new Observer();
+var observer6 = new Observer();
 
 subject.subscribeObserver(observer1);
 subject.subscribeObserver(observer2);
 subject.subscribeObserver(observer3);
 subject.subscribeObserver(observer4);
 subject.subscribeObserver(observer5);
+subject.subscribeObserver(observer6);
 
-subject.notifyObserver(observer2);
+subject.notifyObserver(observer4);
 subject.notifyAllObservers();
