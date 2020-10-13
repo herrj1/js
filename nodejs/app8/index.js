@@ -38,23 +38,21 @@ app.delete('/user/:id', (req, res) => {
 //insert a user
 app.post('/user', (req,res)=>{
 	let user = req.body;
-	var sql = "INSERT INTO person (firstname, lastname, status_update) VALUES (@firstname, @lastname,@status_update)";
-	mysqlConnection.query(sql, [user.firstname, user.lastname, user.status_update], function(err, result) {
+	var sql = 'INSERT INTO person (firstname, lastname, status_update) VALUES ("'+ user.firstname +'","'+ user.lastname +'","'+ user.status_update+'")';
+	mysqlConnection.query(sql, function(err, result) {
 		if (err) throw err;
-		else
-			res.send("all ok");
-			console.log("record inserted");
+		res.send("User inserted successfully");
+		console.log("record inserted");
 	});
 });
 
 //update user
-app.put('/user', (req, res)=>{
+app.put('/user/:id', (req, res)=>{
 	let user = req.body;
-	var sql = "SET @id = ?; SET @firstname = ?; SET @lastname = ?; SET @status_update; CALL UserAddOrEdit(@id, @firstname, @lastname, @status_update);";
-	mysqlConnection.query(sql, [user.id, user.firstname, user.lastname, user.status_update], (err, rows, fields)=>{
-		if(!err)
-			res.send('User Updated successfully');
-		else
-			console.log(err);
-	})
+	var sql = 'UPDATE person SET firstname = "'+ user.firstname +'", lastname = "'+ user.lastname +'", status_update = "'+ user.status_update +'" WHERE id = "'+ req.params.id +'"';
+	mysqlConnection.query(sql, function(err, result){
+		if(err) throw err;
+		res.send('User updated successfully');
+		console.log("record updated");
+	});
 });
