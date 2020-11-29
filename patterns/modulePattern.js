@@ -10,6 +10,5 @@ var HTMLChanger = (function(){
 		}
 	};
 })();
-
 HTMLChanger.callChangeHTML();
 console.log(HTMLChanger.contents);
