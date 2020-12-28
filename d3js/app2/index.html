@@ -9,10 +9,12 @@
    <span>1 &lt;= a*log(n) + b &lt;= 10</span>
 </div><script type="text/javascript">
   var max = 10, data = [];
+  
   for(var i = l; i < max; ++i) data.push(i);
   var linear = d3.scale.linear()
 	.domain([1,10])
 	.range([1,10]);
+	
   var linearCapped = d3.scale.linear()
 	.domain([1,10])
 	.range([1,20]);
