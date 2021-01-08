@@ -1,7 +1,6 @@
 function findEmails(){
 	var mailArchieve = retrieveMails();
 	var cats = {"Place: ": emailRecord("Place", new Date(1994, 2, 5), "unknown")};
-	
 	function handleParagraph(paragraph){
 		if(starsWith(paragraph, "created")){
 			addEmails(emails, emailSubject(paragraph), extractDate(paragraph), extractOrigin(paragraph));
