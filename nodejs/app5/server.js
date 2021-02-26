@@ -1,12 +1,9 @@
 //console.log('May Node be with you')
 
 const express = require('express');
-
 const bodyParser= require('body-parser');
 const app = express();
-
 const MongoClient = require('mongodb').MongoClient;
-
 app.set('view engine', 'ejs');
 var db;
 
