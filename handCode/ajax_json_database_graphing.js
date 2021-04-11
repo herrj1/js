@@ -1,6 +1,7 @@
     $(function(){
       $.ajax({
         url: 'http://localhost/chart_data.php',
+          
         type: 'GET',
         success : function(data) {
           chartData = data;
