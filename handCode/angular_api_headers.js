@@ -1,13 +1,16 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpHeaders, HttpClient, HttpParams } from '@angular/common/http'; 
+
 import { Headers } from '@angular/http';
 
 @Component({
 	
   selector: 'app-authentication',
-  templateUrl: './authentication.component.html',
+
+	templateUrl: './authentication.component.html',
   styleUrls: ['./authentication.component.css']
+
 })
 
 
