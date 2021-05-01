@@ -1,7 +1,7 @@
 {
   "name": "app3",
   "version": "1.0.0",
-  "description": "fullarray crud",
+  "description": "fullarray cruds",
   "main":"server.js",
   "scripts":{
     "dev": "nodemon server.js"
