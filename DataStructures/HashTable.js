@@ -6,7 +6,9 @@ function HashTable(size){
 
 
 HashTable.prototype.add = function(key, value){
+  
   var hash = this.calculateHash(key);
+  
   if(!this.values.hasOwnProperty(hash)){
     this.values[hash] = {};
   }
