@@ -1,6 +1,9 @@
 //js Arrays implementationa
+
 function MyArray(){
+
   this.array = [];
+
 }
 
 MyArray.prototype.add = function(data){
