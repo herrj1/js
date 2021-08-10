@@ -3,9 +3,12 @@
         url: 'http://localhost/chart_data.php',
           
         type: 'GET',
+          
         success : function(data) {
-          chartData = data;
-          var chartProperties = {
+          
+            chartData = data;
+          
+            var chartProperties = {
             "caption": "Top 10 best football players in2015",
             "xAxisName": "Player",
             "yAxisName": "Wicket Taken",
