@@ -1,5 +1,7 @@
 //swapping
+
 function Swapping(){
+	
 	this.stack = [];
 }
 Swappping.prototype.exchange = function(container[], m, n){
