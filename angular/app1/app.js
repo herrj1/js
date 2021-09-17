@@ -1,8 +1,7 @@
-*Simple blog front end demo in order to learn AngularJS - You can adds new posts, add comments, and like posts.*/
+//Simple blog front end demo in order to learn AngularJS - You can adds new posts, add comments, and like posts.*/
 (function(){
   var app = angular.module('blogApp',[]);
   app.controller('BlogController', ['$http', function($http){
-    
     var blog = this;
     blog.title = "AngularJS Blog App";
     
