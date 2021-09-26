@@ -1,7 +1,5 @@
 //js Arrays implementationa
-
 function MyArray(){
-
   this.array = [];
 
 }
